@@ -11,39 +11,12 @@ import {
 } from "@chakra-ui/react";
 
 import { ToggleTheme } from "../Toggle";
+import navLinks from "../../utils/navLinks";
 
 import { asideContent, asideNav, asideNavLink } from "./AsideStyles";
 
 export const Aside = ({ isOpen, onClose }) => {
   const background = useColorModeValue("#ffffff", "#0A2647");
-
-  const navLinks = [
-    {
-      id: 1,
-      name: "About",
-      reference: "#about",
-    },
-    {
-      id: 2,
-      name: "Expertise",
-      reference: "#expertise",
-    },
-    {
-      id: 3,
-      name: "Projects",
-      reference: "#projects",
-    },
-    {
-      id: 4,
-      name: "Experience",
-      reference: "#experience",
-    },
-    {
-      id: 5,
-      name: "Contact",
-      reference: "#contact",
-    },
-  ];
 
   return (
     <Drawer isOpen={isOpen} placement="left" onClose={onClose}>

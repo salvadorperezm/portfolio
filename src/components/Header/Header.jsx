@@ -2,6 +2,7 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import { Box, Link, useDisclosure } from "@chakra-ui/react";
 
 import { Aside } from "../Aside";
+import navLinks from "../../utils/navLinks";
 import { ToggleTheme } from "../Toggle";
 
 import {
@@ -14,34 +15,6 @@ import {
 
 export const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
-  const navLinks = [
-    {
-      id: 1,
-      name: "About",
-      reference: "#about",
-    },
-    {
-      id: 2,
-      name: "Expertise",
-      reference: "#expertise",
-    },
-    {
-      id: 3,
-      name: "Projects",
-      reference: "#projects",
-    },
-    {
-      id: 4,
-      name: "Experience",
-      reference: "#experience",
-    },
-    {
-      id: 5,
-      name: "Contact",
-      reference: "#contact",
-    },
-  ];
 
   return (
     <Box {...headerContainer} id="header">
