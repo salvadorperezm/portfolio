@@ -1,0 +1,22 @@
+export const layoutContainer = {
+  minHeight: `100vh`,
+};
+
+export const spinnerContainer = {
+  height: `100vh`,
+  width: `100vw`,
+  display: `flex`,
+  alignItems: `center`,
+  justifyContent: `center`,
+  flexDirection: `column`,
+  gap: `30px`,
+};
+
+export const spinner = {
+  size: `xl`,
+};
+
+export const loadingText = {
+  fontSize: `22px`,
+  fontFamily: `plusJakarta`,
+};

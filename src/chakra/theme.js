@@ -5,6 +5,14 @@ const fonts = {
   azeretMono: `"Azeret Mono", monospace`,
 };
 
-const theme = extendTheme({ fonts });
+const config = {
+  initialColorMode: "dark",
+  useSystemColorMode: false,
+};
+
+const theme = extendTheme({
+  fonts,
+  config,
+});
 
 export default theme;
