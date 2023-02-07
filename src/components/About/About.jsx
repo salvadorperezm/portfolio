@@ -1,4 +1,5 @@
 import { Box, Text } from "@chakra-ui/react";
+import Typewriter from "typewriter-effect";
 
 import { ProfilePicture, SocialMedia } from "../../components";
 
@@ -16,7 +17,21 @@ export const About = () => {
       <Box {...aboutContentContainer}>
         <Text {...textTitle}>{`<Hello World />`}</Text>
         <ProfilePicture />
-        <Text {...textHeader}>I am Salvador Perez</Text>
+        <Box {...textHeader}>
+          <Text>I am</Text>
+          <Typewriter
+            options={{
+              strings: [
+                "Salvador Perez.",
+                "Software Developer.",
+                "Web Enthusiast.",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </Box>
+
         <Text {...textBody}>
           I am a Full Stack Software Developer based in Managua, Nicaragua. 🇳🇮
         </Text>

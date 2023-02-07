@@ -24,6 +24,9 @@ export const textTitle = {
 export const textHeader = {
   fontFamily: `plusJakarta`,
   fontSize: `22px`,
+  textAlign: `center`,
+  display: `flex`,
+  gap: `5px`,
 };
 
 export const textBody = {
