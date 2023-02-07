@@ -1,7 +1,7 @@
 import { Box, Spinner, Text, useColorModeValue } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
-import { Header } from "../components";
+import { Header, About } from "../components";
 
 import {
   layoutContainer,
@@ -24,7 +24,7 @@ export const Layout = () => {
     }, 2000);
   };
 
-  const background = useColorModeValue("#ffffff", "#0A2647");
+  const background = useColorModeValue("#f5f5f5", "#0A2647");
 
   return (
     <>
@@ -36,6 +36,7 @@ export const Layout = () => {
       ) : (
         <Box bg={background} {...layoutContainer}>
           <Header />
+          <About />
         </Box>
       )}
     </>
