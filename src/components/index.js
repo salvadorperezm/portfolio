@@ -8,3 +8,4 @@ export * from "./Technology";
 export * from "./Projects";
 export * from "./Tag";
 export * from "./Button";
+export * from "./Carrousel";

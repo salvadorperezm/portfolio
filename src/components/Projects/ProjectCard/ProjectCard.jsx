@@ -1,5 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 import { GithubButton, LiveDemoButton } from "../../Button";
+import { Carrousel } from "../../Carrousel";
 import { Tag } from "../../Tag";
 import {
   projectButtonsContainer,
@@ -14,7 +15,9 @@ import {
 export const ProjectCard = ({ project }) => {
   return (
     <Box {...projectCardContainer}>
-      <Box {...projectCarrouselContainer}></Box>
+      <Box {...projectCarrouselContainer}>
+        <Carrousel />
+      </Box>
       <Box {...projectTextContainer}>
         <Text {...projectTitle}>{project.title}</Text>
         <Text {...projectDescription}>{project.description}</Text>

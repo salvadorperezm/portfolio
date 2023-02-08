@@ -6,7 +6,6 @@ export const projectCardContainer = {
 };
 
 export const projectCarrouselContainer = {
-  border: `1px solid red`,
   height: `300px`,
 };
 
