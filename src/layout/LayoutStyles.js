@@ -3,6 +3,7 @@ export const layoutContainer = {
 };
 
 export const spinnerContainer = {
+  backgroundColor: `#0A2647`,
   height: `100vh`,
   width: `100vw`,
   display: `flex`,

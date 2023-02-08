@@ -1,4 +1,4 @@
-import { Box, Text, useColorModeValue } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 
 import { Technology } from "../Technology";
 import {
@@ -21,10 +21,8 @@ import {
 } from "./ExpertiseStyles";
 
 export const Expertise = () => {
-  const bg = useColorModeValue("#f5f5f5", "#144272");
-
   return (
-    <Box id="#expertise" {...expertiseContainer} bg={bg}>
+    <Box id="#expertise" {...expertiseContainer}>
       <Box {...expertiseContentContainer}>
         <Text {...textTitle}>{`<Expertise />`}</Text>
         <Box {...mainContainer}>

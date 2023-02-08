@@ -1,27 +1,22 @@
 import {
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   Link,
-  useColorModeValue,
   Box,
 } from "@chakra-ui/react";
 
-import { ToggleTheme } from "../Toggle";
 import navLinks from "../../utils/navLinks";
 
 import { asideContent, asideNav, asideNavLink } from "./AsideStyles";
 
 export const Aside = ({ isOpen, onClose }) => {
-  const background = useColorModeValue("#ffffff", "#0A2647");
-
   return (
     <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
       <DrawerOverlay />
-      <DrawerContent bg={background}>
+      <DrawerContent>
         <DrawerCloseButton />
 
         <DrawerBody {...asideContent}>
@@ -40,10 +35,6 @@ export const Aside = ({ isOpen, onClose }) => {
             })}
           </Box>
         </DrawerBody>
-
-        <DrawerFooter>
-          <ToggleTheme boxSize={"60px"} />
-        </DrawerFooter>
       </DrawerContent>
     </Drawer>
   );
