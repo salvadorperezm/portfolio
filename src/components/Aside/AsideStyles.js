@@ -1,4 +1,6 @@
-export const asideContent = {};
+export const asideContent = {
+  backgroundColor: `#0A2647`,
+};
 
 export const asideNav = {
   display: `flex`,
