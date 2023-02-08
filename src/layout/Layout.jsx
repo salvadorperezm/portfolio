@@ -1,7 +1,7 @@
 import { Box, Spinner, Text, useColorModeValue } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
-import { Header, About } from "../components";
+import { Header, About, Expertise } from "../components";
 
 import {
   layoutContainer,
@@ -37,6 +37,7 @@ export const Layout = () => {
         <Box bg={background} {...layoutContainer}>
           <Header />
           <About />
+          <Expertise />
         </Box>
       )}
     </>
