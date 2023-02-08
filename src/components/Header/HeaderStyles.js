@@ -1,4 +1,5 @@
 export const headerContainer = {
+  backgroundColor: `#0A2647`,
   display: `flex`,
   alignItems: `center`,
   justifyContent: `space-between`,

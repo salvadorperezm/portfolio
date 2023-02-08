@@ -1,4 +1,5 @@
 export const expertiseContainer = {
+  backgroundColor: `#144272`,
   minHeight: `100vh`,
   display: `flex`,
   alignItems: `center`,
