@@ -1,10 +1,10 @@
 import { Box, Text } from "@chakra-ui/react";
-import { tagContainer } from "./TagStyles";
+import { tagContainer, tagText } from "./TagStyles";
 
 export const Tag = ({ tag }) => {
   return (
     <Box {...tagContainer}>
-      <Text>{tag}</Text>
+      <Text {...tagText}>{tag}</Text>
     </Box>
   );
 };

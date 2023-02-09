@@ -3,3 +3,8 @@ export const tagContainer = {
   borderRadius: `5px`,
   padding: `5px`,
 };
+
+export const tagText = {
+  fontFamily: `plusJakarta`,
+  fontSize: `18px`,
+};

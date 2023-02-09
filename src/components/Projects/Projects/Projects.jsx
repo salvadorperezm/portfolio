@@ -4,6 +4,7 @@ import { ProjectCard } from "../ProjectCard";
 import projects from "../../../utils/projects";
 
 import {
+  projectsCardsContainer,
   projectsContainer,
   projectsContentContainer,
   textTitle,
@@ -14,7 +15,7 @@ export const Projects = () => {
     <Box {...projectsContainer}>
       <Box {...projectsContentContainer}>
         <Text {...textTitle}>{`<Projects />`}</Text>
-        <Box>
+        <Box {...projectsCardsContainer}>
           {projects.map((project, index) => {
             return <ProjectCard key={index} project={project} />;
           })}

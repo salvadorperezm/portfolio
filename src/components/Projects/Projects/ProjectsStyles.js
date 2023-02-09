@@ -1,5 +1,4 @@
 export const projectsContainer = {
-  border: `1px solid red`,
   backgroundColor: `#144272`,
   minHeight: `100vh`,
   display: `flex`,
@@ -9,10 +8,15 @@ export const projectsContainer = {
 
 export const projectsContentContainer = {
   flex: `1`,
-  border: `1px solid red`,
   maxWidth: `1200px`,
   mx: { base: `10px`, lg: `0px` },
-  padding: `10px`,
+  padding: { base: `10px`, lg: `0px` },
+};
+
+export const projectsCardsContainer = {
+  display: `flex`,
+  flexDirection: { base: `column`, lg: `row` },
+  gap: `20px`,
 };
 
 export const textTitle = {

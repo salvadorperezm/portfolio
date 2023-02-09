@@ -7,6 +7,7 @@ export const GithubButton = ({ link }) => {
   return (
     <Link isExternal href={link.url} {...buttonLink}>
       <Button
+        isDisabled={link.isDisabled}
         leftIcon={<FiGithub />}
         {...buttonContainer}
       >{`GitHub Repository ${link.stack}`}</Button>
