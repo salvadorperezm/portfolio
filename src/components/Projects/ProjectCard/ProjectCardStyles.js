@@ -3,6 +3,9 @@ export const projectCardContainer = {
   boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`,
   borderRadius: `5px`,
   overflow: `hidden`,
+  flex: `1`,
+  display: `flex`,
+  flexDirection: `column`,
 };
 
 export const projectCarrouselContainer = {
@@ -14,6 +17,8 @@ export const projectTextContainer = {
   display: `flex`,
   flexDirection: `column`,
   gap: `20px`,
+  flex: `1`,
+  justifyContent: `space-between`,
 };
 
 export const projectTitle = {
