@@ -1,7 +1,7 @@
 import { Box, Spinner, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
-import { Header, About, Expertise } from "../components";
+import { Header, About, Expertise, Projects } from "../components";
 
 import {
   layoutContainer,
@@ -36,6 +36,7 @@ export const Layout = () => {
           <Header />
           <About />
           <Expertise />
+          <Projects />
         </Box>
       )}
     </>
