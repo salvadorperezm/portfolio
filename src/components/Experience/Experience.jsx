@@ -13,6 +13,7 @@ import {
   experienceMainContainer,
   textTitle,
 } from "./ExperienceStyles";
+import { ExperienceMobileMenu } from "./ExperienceMobileMenu/ExperienceMobileMenu";
 
 export const Experience = () => {
   const [currentJob, setCurrentJob] = useState({});
@@ -37,6 +38,11 @@ export const Experience = () => {
               );
             })}
           </Box>
+          <ExperienceMobileMenu
+            jobs={jobs}
+            currentJob={currentJob}
+            setCurrentJob={setCurrentJob}
+          />
           <ExperienceCard currentJob={currentJob} />
         </Box>
       </Box>

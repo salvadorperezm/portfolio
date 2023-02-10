@@ -24,7 +24,7 @@ export const experienceMainContainer = {
 };
 
 export const experienceButtonsContainer = {
-  display: `flex`,
+  display: { base: `none`, lg: `flex` },
   flexDirection: `column`,
   gap: `20px`,
 };
