@@ -9,3 +9,4 @@ export * from "./Projects";
 export * from "./Tag";
 export * from "./Button";
 export * from "./Carrousel";
+export * from "./Experience";
