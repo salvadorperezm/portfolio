@@ -12,15 +12,13 @@ export const experienceContentContainer = {
 };
 
 export const experienceMainContainer = {
-  backgroundColor: `#144272`,
   padding: `20px`,
   borderRadius: `5px`,
   display: `grid`,
   gridTemplateColumns: { base: `1fr`, lg: `30% 1fr` },
   gridTemplateRows: `auto`,
-  gap: { base: `20px`, lg: `100px` },
+  gap: { base: `20px`, lg: `40px` },
   margin: { base: `10px`, lg: `0px` },
-  boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`,
 };
 
 export const experienceButtonsContainer = {
