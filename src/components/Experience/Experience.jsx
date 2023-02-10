@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import { ExperienceButton } from "../Button";
 import { ExperienceCard } from "./ExperienceCard";
+import { ExperienceMobileMenu } from "./ExperienceMobileMenu";
 
 import jobs from "../../utils/jobs";
 
@@ -13,7 +14,6 @@ import {
   experienceMainContainer,
   textTitle,
 } from "./ExperienceStyles";
-import { ExperienceMobileMenu } from "./ExperienceMobileMenu/ExperienceMobileMenu";
 
 export const Experience = () => {
   const [currentJob, setCurrentJob] = useState({});
