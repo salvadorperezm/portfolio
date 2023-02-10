@@ -1,4 +1,5 @@
 export const experienceMobileMenuButton = {
-  display: { base: `block`, lg: `none` },
+  display: { base: `flex`, lg: `none` },
+  alignItems: `center`,
   boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`,
 };
