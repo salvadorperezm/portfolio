@@ -7,7 +7,9 @@ import {
   Input,
   Text,
   Textarea,
+  useToast,
 } from "@chakra-ui/react";
+import emailjs from "@emailjs/browser";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { RxPaperPlane } from "react-icons/rx";
@@ -18,8 +20,13 @@ import {
   contactFormContainer,
   textTitle,
 } from "./ContactStyles";
+import { useState } from "react";
 
 export const Contact = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const toast = useToast();
+
   const formik = useFormik({
     initialValues: {
       fullName: "",
@@ -36,11 +43,34 @@ export const Contact = () => {
       message: Yup.string().required("Message is required."),
     }),
     onSubmit: async (values, actions) => {
+      setIsLoading(true);
       try {
-        console.log(values);
+        await emailjs.send(
+          import.meta.env.VITE_SERVICE_ID,
+          import.meta.env.VITE_FORM_ID,
+          values,
+          import.meta.env.VITE_PUBLIC_KEY
+        );
         actions.resetForm();
+        toast({
+          title: "Email sent successfully.",
+          description: "I will be contacting you as soon as possible.",
+          position: "top",
+          status: "success",
+          duration: 6000,
+          isClosable: true,
+        });
+        setIsLoading(false);
       } catch (error) {
-        console.error(error);
+        toast({
+          title: "An error occurred.",
+          description: "Please, verify your email or internet connection.",
+          position: "top",
+          status: "error",
+          duration: 6000,
+          isClosable: true,
+        });
+        setIsLoading(false);
       }
     },
   });
@@ -108,7 +138,11 @@ export const Contact = () => {
             />
             <FormErrorMessage>{formik.errors.message}</FormErrorMessage>
           </FormControl>
-          <Button rightIcon={<RxPaperPlane />} onClick={formik.handleSubmit}>
+          <Button
+            rightIcon={<RxPaperPlane />}
+            onClick={formik.handleSubmit}
+            isLoading={isLoading}
+          >
             Send
           </Button>
         </Box>
