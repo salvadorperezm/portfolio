@@ -16,6 +16,7 @@ export const textTitle = {
   fontFamily: `azeretMono`,
   fontSize: { base: `22px`, lg: `32px` },
   textAlign: `center`,
+  mb: `20px`,
 };
 
 export const contactFormContainer = {
