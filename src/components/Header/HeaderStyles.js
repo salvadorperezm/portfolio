@@ -1,11 +1,15 @@
 export const headerContainer = {
-  backgroundColor: `#0A2647`,
+  position: `sticky`,
+  top: `0`,
+  zIndex: `1`,
+  backgroundColor: `rgba(10, 38, 71, .1)`,
+  backdropFilter: `blur(20px)`,
   display: `flex`,
   alignItems: `center`,
   justifyContent: `space-between`,
   px: { base: `10px`, lg: `20px` },
   py: `10px`,
-  fontFamily: "azeretMono",
+  fontFamily: `azeretMono`,
 };
 
 export const headerLogo = {

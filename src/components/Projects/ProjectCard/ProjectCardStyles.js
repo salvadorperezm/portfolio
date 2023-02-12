@@ -9,7 +9,7 @@ export const projectCardContainer = {
 };
 
 export const projectCarrouselContainer = {
-  height: `300px`,
+  height: `200px`,
 };
 
 export const projectTextContainer = {

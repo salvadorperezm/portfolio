@@ -1,6 +1,6 @@
 export const aboutContainer = {
   backgroundColor: `#0A2647`,
-  minHeight: { base: `calc(100vh - 59px)`, lg: `calc(100vh - 71px)` },
+  minHeight: `100vh`,
   display: `flex`,
   alignItems: `center`,
   justifyContent: `center`,

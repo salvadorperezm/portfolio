@@ -1,5 +1,6 @@
 export const layoutContainer = {
   minHeight: `100vh`,
+  backgroundColor: `#0A2647`,
 };
 
 export const spinnerContainer = {
