@@ -34,6 +34,7 @@ export const Experience = () => {
                   key={index}
                   job={job}
                   setCurrentJob={setCurrentJob}
+                  isActive={currentJob === job ? true : false}
                 />
               );
             })}
