@@ -13,7 +13,7 @@ import {
 
 export const About = () => {
   return (
-    <Box id="#about" {...aboutContainer}>
+    <Box id="about" {...aboutContainer}>
       <Box {...aboutContentContainer}>
         <Text {...textTitle}>{`<Hello World />`}</Text>
         <ProfilePicture />
