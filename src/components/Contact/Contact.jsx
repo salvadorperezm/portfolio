@@ -76,7 +76,7 @@ export const Contact = () => {
   });
 
   return (
-    <Box {...contactContainer}>
+    <Box id="contact" {...contactContainer}>
       <Box {...contactContentContainer}>
         <Text {...textTitle}>{`<Contact />`}</Text>
         <Box {...contactFormContainer} as={"form"}>
