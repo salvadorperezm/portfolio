@@ -17,7 +17,7 @@ export const Header = () => {
 
   return (
     <Box {...headerContainer} id="header">
-      <Link href="#" {...headerLogo}>{`<salvadorperezm />`}</Link>
+      <Link href="about" {...headerLogo}>{`<salvadorperezm />`}</Link>
       <Box {...headerNav}>
         {navLinks.map((navLink) => {
           return (

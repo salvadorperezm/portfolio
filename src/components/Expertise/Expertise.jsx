@@ -22,7 +22,7 @@ import {
 
 export const Expertise = () => {
   return (
-    <Box id="#expertise" {...expertiseContainer}>
+    <Box id="expertise" {...expertiseContainer}>
       <Box {...expertiseContentContainer}>
         <Text {...textTitle}>{`<Expertise />`}</Text>
         <Box {...mainContainer}>

@@ -23,7 +23,7 @@ export const Experience = () => {
   }, []);
 
   return (
-    <Box {...experienceContainer}>
+    <Box id="experience" {...experienceContainer}>
       <Box {...experienceContentContainer}>
         <Text {...textTitle}>{`<Experience />`}</Text>
         <Box {...experienceMainContainer}>

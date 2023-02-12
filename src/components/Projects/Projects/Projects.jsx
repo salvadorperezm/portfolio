@@ -12,7 +12,7 @@ import {
 
 export const Projects = () => {
   return (
-    <Box {...projectsContainer}>
+    <Box id="projects" {...projectsContainer}>
       <Box {...projectsContentContainer}>
         <Text {...textTitle}>{`<Projects />`}</Text>
         <Box {...projectsCardsContainer}>
