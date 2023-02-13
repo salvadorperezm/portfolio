@@ -8,6 +8,7 @@ import {
   Projects,
   Experience,
   Contact,
+  Footer,
 } from "../components";
 
 import {
@@ -46,6 +47,7 @@ export const Layout = () => {
           <Projects />
           <Experience />
           <Contact />
+          <Footer />
         </Box>
       )}
     </>

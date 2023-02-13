@@ -11,3 +11,4 @@ export * from "./Button";
 export * from "./Carrousel";
 export * from "./Experience";
 export * from "./Contact";
+export * from "./Footer";
