@@ -15,7 +15,7 @@ import github from "../icons/github.svg";
 import bitbucket from "../icons/bitbucket.svg";
 import jira from "../icons/jira.svg";
 import slack from "../icons/slack.svg";
-import vscode from "../icons/vscode.svg";
+import docker from "../icons/docker.svg";
 
 const frontendTechnologies = [
   {
@@ -81,6 +81,10 @@ const tools = [
     icon: github,
   },
   {
+    name: "Docker",
+    icon: docker,
+  },
+  {
     name: "BitBucket",
     icon: bitbucket,
   },
@@ -91,10 +95,6 @@ const tools = [
   {
     name: "Slack",
     icon: slack,
-  },
-  {
-    name: "VS Code",
-    icon: vscode,
   },
 ];
 
