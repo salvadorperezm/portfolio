@@ -2,7 +2,6 @@ export const experienceContainer = {
   backgroundColor: `#0A2647`,
   minHeight: `100vh`,
   display: `flex`,
-  alignItems: `center`,
   justifyContent: `center`,
   color: `#ffffff `,
 };
@@ -33,4 +32,5 @@ export const textTitle = {
   mb: `20px`,
   fontFamily: `azeretMono`,
   fontSize: { base: `22px`, lg: `32px` },
+  mt: { base: `20px`, lg: `220px` },
 };
