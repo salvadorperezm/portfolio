@@ -10,14 +10,19 @@ import {
 
 import navLinks from "../../utils/navLinks";
 
-import { asideContent, asideNav, asideNavLink } from "./AsideStyles";
+import {
+  asideCloseButton,
+  asideContent,
+  asideNav,
+  asideNavLink,
+} from "./AsideStyles";
 
 export const Aside = ({ isOpen, onClose }) => {
   return (
     <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
       <DrawerOverlay />
       <DrawerContent>
-        <DrawerCloseButton />
+        <DrawerCloseButton {...asideCloseButton} />
 
         <DrawerBody {...asideContent}>
           <Box {...asideNav}>

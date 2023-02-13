@@ -4,6 +4,7 @@ export const aboutContainer = {
   display: `flex`,
   alignItems: `center`,
   justifyContent: `center`,
+  color: `#ffffff`,
 };
 
 export const aboutContentContainer = {

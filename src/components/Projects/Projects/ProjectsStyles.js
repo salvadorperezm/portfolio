@@ -4,6 +4,7 @@ export const projectsContainer = {
   display: `flex`,
   justifyContent: `center`,
   alignItems: `center`,
+  color: `#ffffff`,
 };
 
 export const projectsContentContainer = {

@@ -12,6 +12,7 @@ export const spinnerContainer = {
   justifyContent: `center`,
   flexDirection: `column`,
   gap: `30px`,
+  color: `#ffffff`,
 };
 
 export const spinner = {

@@ -10,6 +10,7 @@ export const headerContainer = {
   px: { base: `10px`, lg: `20px` },
   py: `10px`,
   fontFamily: `azeretMono`,
+  color: `#ffffff`,
 };
 
 export const headerLogo = {
