@@ -13,7 +13,7 @@ import {
 export const SocialMedia = () => {
   return (
     <Box {...socialMediaContainer}>
-      <Link isExternal href="mailto:salvadorperezm115@gmail.com">
+      <Link href="#contact">
         <Box {...socialMediaIconContainer}>
           <HiOutlineMail {...socialMediaIcon} />
         </Box>
