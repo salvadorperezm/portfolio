@@ -31,16 +31,19 @@ export const mainContainer = {
 export const frontendTechnologiesGrid = {
   gridRow: `1`,
   gridColumn: `1 / 3`,
+  mb: { base: `20px`, md: `0px` },
 };
 
 export const backendTechnologiesGrid = {
   gridRow: `1`,
   gridColumn: `3 / 5`,
+  mb: { base: `20px`, md: `0px` },
 };
 
 export const toolsGrid = {
   gridRow: `2`,
   gridColumn: `2 / 4`,
+  mb: { base: `20px`, md: `0px` },
 };
 
 export const textHeader = {

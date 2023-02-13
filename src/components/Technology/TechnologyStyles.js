@@ -10,6 +10,13 @@ export const technologyContainer = {
     border: `1px solid transparent`,
     cursor: `pointer`,
     color: `#ffffff`,
+    boxShadow: `rgba(0, 0, 0, 0.24) 0px 3px 8px`,
+  },
+};
+
+export const technologyLink = {
+  _hover: {
+    textDecoration: `none`,
   },
 };
 
