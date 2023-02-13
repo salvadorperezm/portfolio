@@ -1,7 +1,11 @@
 import { CalendarIcon, ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
 
-import { experienceMobileMenuButton } from "./ExperienceMobileMenuStyles";
+import {
+  experienceMobileMenuButton,
+  experienceMobileMenuItem,
+  experienceMobileMenuList,
+} from "./ExperienceMobileMenuStyles";
 
 export const ExperienceMobileMenu = ({ jobs, currentJob, setCurrentJob }) => {
   return (
@@ -15,13 +19,14 @@ export const ExperienceMobileMenu = ({ jobs, currentJob, setCurrentJob }) => {
           >
             {currentJob.duration}
           </MenuButton>
-          <MenuList>
+          <MenuList {...experienceMobileMenuList}>
             {jobs.map((job, index) => {
               return (
                 <MenuItem
                   key={index}
                   icon={<CalendarIcon />}
                   onClick={() => setCurrentJob(job)}
+                  {...experienceMobileMenuItem}
                 >
                   {job.duration}
                 </MenuItem>

@@ -8,9 +8,7 @@ export const Footer = () => {
   return (
     <Box {...footerContainer}>
       <SocialMediaFooter />
-      <Text {...footerText}>
-        Created by @salvadorperezm. All rights reserved.
-      </Text>
+      <Text {...footerText}>Created by @salvadorperezm.</Text>
     </Box>
   );
 };

@@ -5,6 +5,7 @@ export const footerContainer = {
   alignItems: `center`,
   justifyContent: { base: `center`, lg: `space-between` },
   gap: `10px`,
+  color: `#ffffff`,
 };
 
 export const footerText = {

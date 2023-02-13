@@ -18,6 +18,7 @@ import {
   contactContainer,
   contactContentContainer,
   contactFormContainer,
+  submitButton,
   textTitle,
 } from "./ContactStyles";
 import { useState } from "react";
@@ -142,6 +143,7 @@ export const Contact = () => {
             rightIcon={<RxPaperPlane />}
             onClick={formik.handleSubmit}
             isLoading={isLoading}
+            {...submitButton}
           >
             Send
           </Button>

@@ -4,6 +4,7 @@ export const experienceContainer = {
   display: `flex`,
   alignItems: `center`,
   justifyContent: `center`,
+  color: `#ffffff `,
 };
 
 export const experienceContentContainer = {

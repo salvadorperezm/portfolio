@@ -4,6 +4,7 @@ export const contactContainer = {
   display: `flex`,
   alignItems: `center`,
   justifyContent: `center`,
+  color: `#ffffff`,
 };
 
 export const contactContentContainer = {
@@ -28,4 +29,11 @@ export const contactFormContainer = {
   display: `flex`,
   flexDirection: `column`,
   gap: `20px`,
+};
+
+export const submitButton = {
+  backgroundColor: `rgba(255, 255, 255, 0.08)`,
+  _hover: {
+    backgroundColor: `rgba(255, 255, 255, 0.24)`,
+  },
 };
