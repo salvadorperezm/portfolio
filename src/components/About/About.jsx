@@ -23,8 +23,8 @@ export const About = () => {
             options={{
               strings: [
                 "Salvador Perez.",
-                "Software Developer.",
-                "Web Enthusiast.",
+                "a Software Developer.",
+                "a Web Enthusiast.",
               ],
               autoStart: true,
               loop: true,
