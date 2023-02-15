@@ -11,7 +11,7 @@ export const projectsContentContainer = {
   flex: `1`,
   maxWidth: `1200px`,
   mx: { base: `10px`, lg: `0px` },
-  padding: { base: `10px`, lg: `0px` },
+  padding: { base: `10px`, xl: `0px` },
 };
 
 export const projectsCardsContainer = {
