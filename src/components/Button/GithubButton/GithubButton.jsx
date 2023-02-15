@@ -5,7 +5,11 @@ import { buttonContainer, buttonLink } from "./GithubButtonStyles";
 
 export const GithubButton = ({ link }) => {
   return (
-    <Link isExternal href={link.url} {...buttonLink}>
+    <Link
+      isExternal={link.url ? true : false}
+      href={link.url ? link.url : "#"}
+      {...buttonLink}
+    >
       <Button
         isDisabled={link.isDisabled}
         leftIcon={<FiGithub />}

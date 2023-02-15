@@ -7,7 +7,7 @@ import { profilePictureContainer } from "./ProfilePictureStyles";
 export const ProfilePicture = () => {
   return (
     <Box {...profilePictureContainer}>
-      <Image src={profilePicture} />
+      <Image src={profilePicture} alt="Profile picture" />
     </Box>
   );
 };
