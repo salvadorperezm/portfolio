@@ -1,7 +1,7 @@
 import { Box, Link } from "@chakra-ui/react";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
-import { RxDiscordLogo } from "react-icons/rx";
 import { SiUpwork } from "react-icons/si";
 
 import {
@@ -37,11 +37,11 @@ export const SocialMediaFooter = () => {
       </Link>
       <Link
         isExternal
-        href="discordapp.com/users/salva#4492"
-        aria-label="discord icon"
+        href="https://www.linkedin.com/in/salvadorperezm/"
+        aria-label="linkedIn icon"
       >
         <Box>
-          <RxDiscordLogo {...socialMediaFooterIcon} />
+          <FaLinkedinIn {...socialMediaFooterIcon} />
         </Box>
       </Link>
     </Box>
