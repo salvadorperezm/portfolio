@@ -4,7 +4,11 @@ import { buttonContainer, buttonLink } from "./LiveDemoButtonStyles";
 
 export const LiveDemoButton = ({ link }) => {
   return (
-    <Link {...buttonLink}>
+    <Link
+      {...buttonLink}
+      isExternal={link.url ? true : false}
+      href={link.url ? link.url : "#"}
+    >
       <Button
         isDisabled={link.isDisabled}
         leftIcon={<TbWorld />}
