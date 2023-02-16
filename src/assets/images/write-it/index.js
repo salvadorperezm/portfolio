@@ -1,4 +1,4 @@
-import developing from "../write-it/developing.jpg";
+import developing from "../write-it/developing.png";
 
 const writeItImages = [
   {
