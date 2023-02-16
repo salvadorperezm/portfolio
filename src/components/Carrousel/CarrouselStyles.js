@@ -24,3 +24,9 @@ export const carrouselIcon = {
 export const carrouselImage = {
   maxWidth: `100%`,
 };
+
+export const carrouselSpinner = {
+  size: `xl`,
+  alignSelf: `center`,
+  color: `white`,
+};
