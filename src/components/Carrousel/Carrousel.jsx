@@ -1,4 +1,4 @@
-import { Box, Image, Spinner } from "@chakra-ui/react";
+import { Box, Image, Spinner, useToast } from "@chakra-ui/react";
 import { ArrowLeftIcon, ArrowRightIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 
@@ -14,6 +14,8 @@ export const Carrousel = ({ projectImages }) => {
   const [currentImage, setCurrentImage] = useState(0);
   const [isLoading, setIsLoading] = useState(false);
 
+  const toast = useToast();
+
   const previousImage = () => {
     setIsLoading(true);
     try {
@@ -22,7 +24,15 @@ export const Carrousel = ({ projectImages }) => {
         : setCurrentImage(currentImage - 1);
       setIsLoading(false);
     } catch (error) {
-      console.error(error);
+      toast({
+        title: "An error occurred.",
+        description: "Please, verify your internet connection.",
+        position: "top",
+        status: "error",
+        duration: 6000,
+        isClosable: true,
+      });
+      setIsLoading(false);
     }
   };
 
@@ -34,7 +44,15 @@ export const Carrousel = ({ projectImages }) => {
         : setCurrentImage(currentImage + 1);
       setIsLoading(false);
     } catch (error) {
-      console.error(error);
+      toast({
+        title: "An error occurred.",
+        description: "Please, verify your internet connection.",
+        position: "top",
+        status: "error",
+        duration: 6000,
+        isClosable: true,
+      });
+      setIsLoading(false);
     }
   };
 
