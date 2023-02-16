@@ -17,4 +17,11 @@ export const asideNav = {
 
 export const asideNavLink = {
   fontSize: `22px`,
+
+  _hover: {
+    textDecoration: `none`,
+  },
+  _active: {
+    textDecoration: `none`,
+  },
 };
