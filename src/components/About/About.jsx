@@ -1,7 +1,11 @@
 import { Box, Text } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 
-import { ProfilePicture, SocialMedia } from "../../components";
+import {
+  DownloadCvButton,
+  ProfilePicture,
+  SocialMedia,
+} from "../../components";
 
 import {
   aboutContainer,
@@ -35,6 +39,7 @@ export const About = () => {
         <Text {...textBody}>
           I am a Full Stack Software Developer based in Managua, Nicaragua. 🇳🇮
         </Text>
+        <DownloadCvButton />
         <SocialMedia />
       </Box>
     </Box>
