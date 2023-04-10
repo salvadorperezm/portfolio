@@ -1,5 +1,5 @@
 import toDoAppImages from "../assets/images/to-do-app";
-import writeItImages from "../assets/images/write-it";
+import vueWeatherAppImages from "../assets/images/vue-weather-app";
 
 const projects = [
   {
@@ -41,28 +41,17 @@ const projects = [
     ],
   },
   {
-    images: writeItImages,
-    title: "Write It (Twitter Clone)",
+    images: vueWeatherAppImages,
+    title: "Vue Weather App",
     description:
-      "Full stack Web Application built using Vue on the frontend and Ruby on Rails on the  backend. This application is currently under development.",
-    tags: ["HTML", "CSS", "JavaScript", "Vue", "Ruby", "Ruby on Rails"],
+      "The app's user interface is straightforward, with easy-to-understand icons and buttons. I also used the OpenWeatherMap API to obtain weather data, ensuring that the app is always up-to-date with the latest weather information. When users first open the web app, they are prompted to either enter a location or allow the app to access their browser's built-in location function. Once the user's location is determined, the app displays a detailed weather report, including temperature, humidity, wind speed, and max visibility.The app also includes an options page, where users can choose their preferred unit of measurement for temperature, wind speed, and precipitation.",
+    tags: ["HTML", "CSS", "JavaScript", "Vue", "Vue Router", "API"],
     links: [
       {
-        host: "github",
-        stack: "Frontend",
-        isDisabled: true,
-        url: "",
-      },
-      {
-        host: "github",
-        stack: "Backend",
-        isDisabled: true,
-        url: "",
-      },
-      {
         host: "demo",
-        isDisabled: true,
-        url: "",
+        stack: "Frontend",
+        isDisabled: false,
+        url: "https://salvadorperezm.github.io/weather-app-vue/",
       },
     ],
   },
